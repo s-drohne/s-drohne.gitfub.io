@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import "../valuables/valuables";
+
+.modal-area__items {
+  padding: (30px 25px);
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, .95);
+  overflow-y: scroll;
+  z-index: 10;
+}
+.modal-area__close {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  transition: all .7s ease-in-out;
+  cursor: pointer;
+  &:after {
+    font-family: "FontAwesome";
+    content: "\f057";
+    font-size: 40px;
+  }
+}
+.modal-area__items__img {
+  div {
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+.modal-area__items__heading {
+  border-bottom: 2px solid $mainColor;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 0 0 5px;
+  margin: 20px 0 0;
+}
+.modal-area__items__description__text {
+  margin: 10px 0 0;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+
+@media (min-width: $tbwidth) {
+  .modal-area__items {
+    padding: 40px calc((100% - 700px) / 2);
+  }
+  .modal-area__close {
+    top: 30px;
+    right: 30px;
+  }
+  .modal-area__items__img {
+    margin-top: 70px;
+    div {
+      img {
+        width: auto;
+        height: 40%;
+        max-height: 400px;
+        min-height: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .modal-area__items__heading {
+    margin: 30px auto 0 0;
+    padding-bottom: 10px;
+    width: calc(700px * .6 - 30px);
+  }
+  .modal-area__items__description {
+    display: table;
+    width: $tbInner;
+    margin: 10px auto 0;
+  }
+  .modal-area__items__description__text {
+    display: table-cell;
+    padding: 0 30px 0 0;
+    width: 60%;
+    &-data {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: $pcWidth) {
+  .modal-area__items {
+    padding: 40px calc((100% - 1000px) / 2);
+  }
+  .modal-area__items__heading {
+    width: (1000px * .6 - 30px);
+  }
+  .modal-area__items__description {
+    width: $pcInner;
+  }
+}
