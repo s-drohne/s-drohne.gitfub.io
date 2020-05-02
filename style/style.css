@@ -24,12 +24,15 @@ body.is-modal-open {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
   transition: all .7s ease;
 }
 a:hover {
-  color: #333;
+  color: #aaa;
+}
+
+i {
+  font-family: "FontAwesome";
 }
 
 .fadein {
@@ -72,6 +75,7 @@ a:hover {
   }
 }
 .backToTop {
+  text-decoration: none;
   font-weight: bolder;
   transform: translateY(40px);
   position: fixed;
@@ -157,6 +161,12 @@ a:hover {
 }
 .works__items__item-2:focus:after, .works__items__item-2:hover:after {
   content: "portfolio";
+}
+.works__items__item-3 {
+  background: url("../img/blog_top.png") center center/cover;
+}
+.works__items__item-3:focus:after, .works__items__item-3:hover:after {
+  content: "blog";
 }
 
 @media (min-width: 768px) {
@@ -419,7 +429,7 @@ a:hover {
 .slick-dots li button:after {
   color: #aaa;
   content: "●";
-  font-size: 18px;
+  font-size: 12px;
 }
 .slick-dots li button:active, .slick-dots li button:focus {
   outline: none;

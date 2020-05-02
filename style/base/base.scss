@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../valuables/valuables";
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Raleway:wght@300;500;800&display=swap');
@@ -24,12 +25,15 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
   transition: all .7s ease;
   &:hover {
-    color: #333;
+    color: $disabled;
   }
+}
+
+i {
+  font-family: "FontAwesome";
 }
 
 .fadein {
