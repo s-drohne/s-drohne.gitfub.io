@@ -1,4 +1,4 @@
-jQuery(function() {
+$(document).ready(function() {
   $('.title').hide().fadeIn(2000);
   $(".backToTop").click(function () {
     $('body,  html').animate({
