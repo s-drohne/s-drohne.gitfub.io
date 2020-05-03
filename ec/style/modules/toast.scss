@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 250px;
+  margin: -50px 0 0 -125px;
+  display: none;
+  background: $secondarycolor;
+  color: $btntextcolor;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 100px;
+}

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
   <head>
@@ -14,8 +15,7 @@
   <body>
 
     <header>
-      <h1 class="header__logo"></h1>
-      <span class="header__menu"></span>
+      <a href="index.html"><h1 class="header__logo"><img src="img/logo-horizontal.png" alt="UROCOYA"></h1></a>
       <div class="header__buttons">
         <a class="header__buttons__button header__buttons__button-cart" href="cart.html"><span class="badge">1</span></a>
         <a class="header__buttons__button header__buttons__button-mypage" href="#"></a>
@@ -42,7 +42,7 @@
               </div>
               <div class="cart__item__data__price">
                 <span>¥35,000</span>
-                <select name="">
+                <select name="quantity">
                   <option value="">1</option>
                   <option value="">2</option>
                   <option value="">3</option>
@@ -71,7 +71,7 @@
       </div>
       <div class="cart__btnarea">
         <a href="#" class="button button-warn">配送先情報の入力へ</a>
-        <a href="#" class="button">お買い物に戻る</a>
+        <a href="#" class="button" onClick="history.back(); return false;">お買い物に戻る</a>
       </div>
     </main>
 

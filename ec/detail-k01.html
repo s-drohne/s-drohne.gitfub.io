@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
   <head>
@@ -14,7 +15,7 @@
   <body>
 
     <header>
-      <h1 class="header__logo"></h1>
+      <a href="index.html"><h1 class="header__logo"><img src="img/logo-horizontal.png" alt="UROCOYA"></h1></a>
       <span class="header__menu"></span>
       <div class="header__buttons">
         <a class="header__buttons__button header__buttons__button-cart" href="cart.html"><span class="badge">1</span></a>
@@ -23,10 +24,13 @@
     </header>
 
     <main>
+      <div class="toast">
+        カートに商品を追加しました。
+      </div>
       <ul class="breadcrumb">
         <li><a href="index.html">TOP</a></li>
-        <li>kimono</li>
-        <li>hitoe</li>
+        <li><a href="kimono.html">kimono</a></li>
+        <li><a href="hitoe.html">hitoe</a></li>
         <li>【kimono】flower</li>
       </ul>
 
@@ -34,19 +38,19 @@
         <aside class="sidemenu">
           <img class="sidemenu__close" src="img/close.png" alt="close">
           <ul>
-            <li><a href="store.html">new arrival</a></li>
+            <li><a href="new.html">new arrival</a></li>
             <li><a href="#">all</a></li>
           </ul>
           <ul>
             <li>
-              <a href="#">kimono</a>
+              <a href="kimono.html">kimono</a>
               <ul>
-                <li><a href="#">hitoe</a></li>
-                <li><a href="#">awase</a></li>
+                <li><a href="hitoe.html">hitoe</a></li>
+                <li><a href="empty.html">awase</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">obi
+              <a href="#">obi</a>
               <ul>
                 <li><a href="#">nagoya-obi</a></li>
                 <li><a href="#">fukuro-obi</a></li>
@@ -54,7 +58,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">others
+              <a href="#">others</a>
               <ul>
                 <li><a href="#">zouri</a></li>
                 <li><a href="#">juban</a></li>
@@ -69,27 +73,29 @@
           </div>
           <div class="detail__item__thumbnail">
             <img src="img/item/k-flower-01.jpg" alt="">
-            <img src="img/item/k-jelly-01.jpg" alt="">
-            <img src="img/item/k-chocolate-01.jpg" alt="">
-            <img src="img/item/k-flower-01.jpg" alt="">
-            <img src="img/item/k-flower-01.jpg" alt="">
+            <img src="img/item/k-flower-02.jpg" alt="">
+            <img src="img/item/k-flower-03.jpg" alt="">
           </div>
           <div class="detail__data">
             <div class="detail__data__text">
               <span>【kimono】flower</span>
               <span><strong>¥35,000</strong> (tax in)</span>
               <p>
-                鮮やかな花のプリントが印象的な単の着物です。3シーズン対応。<br>
-                素材: ポリエステル100%<br>
+                鮮やかな花のプリントが印象的な単衣の着物です。3シーズン対応。<br>
+                素材: 綿100%<br>
                 サイズ: フリー(身幅XXcm 裄丈XXcm 総丈XXcm)
               </p>
+              <ul class="">
+                <li></li>
+                <li></li>
+              </ul>
             </div>
             <div class="detail__data__form">
               <select class="detail__data__form__size" name="">
                 <option value="">サイズ</option>
                 <option value="">フリー</option>
               </select>
-              <a href="#" class="button button-narrow button-inline">カートに入れる</a>
+              <a href="#" class="button button-narrow button-inline button-cart">カートに入れる</a>
             </div>
           </div>
         </div>

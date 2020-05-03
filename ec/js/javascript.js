@@ -19,4 +19,9 @@ $(function() {
       $('.detail__item__main img').attr({src:$thisImg,alt:$thisAlt}).fadeIn();
     });
   });
+  $('.button-cart').click(function(){
+    $('.toast').fadeIn(1000, function () {
+      $(this).delay(1500).fadeOut(1000);
+    });
+  });
 });

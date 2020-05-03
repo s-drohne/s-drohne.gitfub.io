@@ -93,5 +93,11 @@
   }
   .cart__sum__detail {
     width: 300px;
+    margin-top: 10px;
+    tr {
+      td {
+        padding: 3px 0;
+      }
+    }
   }
 }

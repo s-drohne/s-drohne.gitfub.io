@@ -1,2 +1,3 @@
 *.DS_Store
-style/.sass-cache
+*.map
+*.sass-cache/

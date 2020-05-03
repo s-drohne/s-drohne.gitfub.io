@@ -4,3 +4,8 @@
 $commonborder: $bordercolor 1px solid;
 
 $transition: all .7s ease;
+
+@mixin imghover {
+  opacity: .7;
+  transition: $transition;
+}
