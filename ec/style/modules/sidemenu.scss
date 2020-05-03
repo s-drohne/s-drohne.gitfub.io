@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.sidemenu {
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background: $textcolor;
+  top: 0;
+  left: -150px;
+  z-index: 10;
+  padding: 20px 0 0 15px;
+  transition: $transition;
+  color: $bgcolor;
+  a {
+    color: $bgcolor;
+  }
+  > ul {
+    margin: 0 0 30px;
+    li {
+      margin: 0 0 10px;
+      ul {
+        margin: 5px 0 15px 10px;
+      }
+    }
+  }
+}
+.sidemenu__close {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin: 0 0 20px;
+}
+
+@media (min-width: $tbWidth) {
+  .sidemenu {
+    left: 0;
+    padding: 0;
+    display: table-cell;
+    position: static;
+    background: transparent;
+    color: $textcolor;
+    width: 150px;
+    vertical-align: top;
+    a {
+      display: inline-block;
+      color: $textcolor;
+      &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        background: $secondarycolor;
+        transition: $transition;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+          background: $secondarycolor;
+        }
+      }
+    }
+  }
+  .sidemenu__close {
+    display: none;
+  }
+}
+
+@media (min-width: $pcWidth) {
+  .sidemenu {
+    width: 180px;
+  }
+}

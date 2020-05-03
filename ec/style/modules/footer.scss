@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.footer__menu {
+  margin: 30px 0 0 20%;
+  li {
+    margin: 0 0 5px;
+  }
+  a {
+    display: inline-block;
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: $secondarycolor;
+      transition: $transition;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+        background: $secondarycolor;
+      }
+    }
+  }
+}
+.footer__logo {
+  text-align: center;
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $tbWidth) {
+  .footer__inner {
+    display: flex;
+  }
+
+  .footer__logo {
+    display: block;
+    width: 300px;
+    margin: 0 10px 0 0;
+  }
+
+  .footer__menu {
+    display: block;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $pcWidth) {
+  .footer__inner {
+    width: $pcInner;
+    margin: 0 auto;
+  }
+}

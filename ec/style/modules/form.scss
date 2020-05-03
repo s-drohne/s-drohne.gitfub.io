@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+select {
+  border: none;
+  border-bottom: $commonborder;
+  padding: 5px 25px 5px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  font-size: 13px;
+  outline: none;
+  background: $accentcolor url("../img/arrow-bottom.png") no-repeat right center / 12px;
+}
