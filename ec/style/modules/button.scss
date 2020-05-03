@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "../valuables/valuables";
+
+.button {
+  display: block;
+  background: $secondarycolor;
+  padding: 16px;
+  color: $btntextcolor;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Bellota';
+  text-align: center;
+  width: 100%;
+  transition: $transition;
+  &-warn {
+    background: $accentcolor;
+    color: $textcolor;
+  }
+  &-inline {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $tbWidth) {
+  .button {
+    width: 300px;
+    &-narrow {
+      width: 240px;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

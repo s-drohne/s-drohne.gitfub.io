@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.header__logo {
+  background: url("../img/logo-horizontal.png") no-repeat center center / contain;
+  width: 120px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.header__buttons {
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 100px;
+  height: 40px;
+  right: 5px;
+  text-align: right;
+}
+
+.header__buttons__button {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  &-cart {
+    background-image: url("../img/cart.png");
+  }
+  &-mypage {
+    background-image: url("../img/mypage.png");
+  }
+}
+.header__menu {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background: url("../img/hamburger.png") no-repeat center center / 36px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: $tbWidth) {
+  .header__menu {
+    display: none;
+  }
+}

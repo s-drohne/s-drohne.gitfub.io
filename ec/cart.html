@@ -1,0 +1,96 @@
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="header__logo"></h1>
+      <span class="header__menu"></span>
+      <div class="header__buttons">
+        <a class="header__buttons__button header__buttons__button-cart" href="cart.html"><span class="badge">1</span></a>
+        <a class="header__buttons__button header__buttons__button-mypage" href="#"></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="cart">
+        <h2>shopping cart</h2>
+        <ol class="process">
+          <li class="active">STEP1</li>
+          <li>STEP2</li>
+          <li>STEP3</li>
+        </ol>
+        <ul class="cart__item">
+          <li>
+            <div class="cart__item__image">
+              <img class="cart__item__image" src="img/item/k-flower-01.jpg" alt="">
+            </div>
+            <div class="cart__item__data">
+              <div class="cart__item__data__detail">
+                <span>【kimono】flower</span>
+                <span>size: free</span>
+              </div>
+              <div class="cart__item__data__price">
+                <span>¥35,000</span>
+                <select name="">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="cart__sum">
+          <table class="cart__sum__detail">
+            <tr>
+              <td>小計</td>
+              <td>¥35,000</td>
+            </tr>
+            <tr>
+              <td>送料</td>
+              <td>¥700</td>
+            </tr>
+          </table>
+          <div class="cart__sum__price">
+            ¥37,500
+          </div>
+        </div>
+      </div>
+      <div class="cart__btnarea">
+        <a href="#" class="button button-warn">配送先情報の入力へ</a>
+        <a href="#" class="button">お買い物に戻る</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <ul class="footer__menu">
+          <li><a href="#">お支払い方法について</a></li>
+          <li><a href="#">配送方法・送料について</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">特定商取引法に基づく表記</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

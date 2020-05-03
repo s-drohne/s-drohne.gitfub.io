@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import "../valuables/valuables";
+
+.items {
+  list-style: none;
+  li {
+    margin: 0 0 20px;
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+}
+
+.items__img {
+  width: 100%;
+  position: relative;
+  &:after {
+    padding: 100% 0 0;
+    display: block;
+    content: "";
+  }
+}
+
+.items__img__inner {
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.items__data {
+  text-align: center;
+  margin: 10px 0 0;
+  span {
+    display: block;
+    margin: 5px 0 0;
+  }
+}
+
+@media (min-width: $tbWidth) {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 300px;
+      margin-bottom: 25px;
+      &:nth-child(n + 4) {
+        display: block;
+      }
+    }
+  }
+  .items__img {
+    width: 100%;
+    height: auto;
+  }
+}
