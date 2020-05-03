@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.breadcrumb {
+  margin: 20px 0 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    &:last-child {
+      color: $secondarycolor;
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      display: inline-block;
+      content: ">";
+      margin: 0 5px;
+    }
+  }
+  a {
+    &:hover {
+      border-bottom: $commonborder;
+      transition: $transition;
+    }
+  }
+}

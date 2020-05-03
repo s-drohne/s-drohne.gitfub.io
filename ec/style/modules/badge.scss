@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.badge {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $secondarycolor;
+  color: #fff;
+  top: 0;
+  left: 0;
+  text-align: center;
+}

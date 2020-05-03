@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "../valuables/valuables";
+
+.mainvisual {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 200px;
+  background: url("../img/main.jpg") no-repeat center center / 100%;
+  border-bottom: $commonborder;
+}
+
+@media (min-width: $tbWidth) {
+  .mainvisual {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: 400px;
+  }
+}
+
+.menu {
+  margin: 20px auto 0;
+}
+
+.menu__banner {
+  width: 100%;
+  border: $commonborder;
+  margin: 0 0 10px;
+  display: block;
+  height: 85px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &-kimono {
+    background-image: url("../img/banner-kimono.jpg");
+  }
+  &-obi {
+    background-image: url("../img/banner-obi.jpg");
+  }
+  &-others {
+    background-image: url("../img/banner-others.jpg");
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tbWidth) {
+  .menu {
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu__banner {
+    margin: 0 10px 0 0;
+    background-position: 75% center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $pcWidth) {
+  .menu__banner {
+    width: 300px;
+  }
+}
+
+.new {
+  margin: 20px 0 0;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0 0 3px;
+    border-bottom: $commonborder;
+  }
+}
+
+@media (min-width: $tbWidth) {
+  .button-more {
+    width: 400px;
+    margin: 30px auto;
+  }
+}

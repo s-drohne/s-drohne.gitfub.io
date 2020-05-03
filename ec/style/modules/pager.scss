@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.pager {
+  margin: 30px auto 0;
+  text-align: center;
+  font-size: 18px;
+  span {
+    display: inline-block;
+    margin: 0 7px;
+    vertical-align: middle;
+    border-bottom: transparent 2px solid;
+    &.active {
+      border-bottom: $accentcolor 2px solid;
+    }
+  }
+  img {
+    height: 36px;
+    width: auto;
+  }
+}

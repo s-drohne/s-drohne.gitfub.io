@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import "../valuables/valuables";
+
+.list {
+  h2 {
+    font-size: 26px;
+    border-bottom: $commonborder;
+    padding: 0 0 5px;
+    margin: 30px 0 10px;
+  }
+}
+
+.list__items {
+  position: relative;
+}
+
+.list__sort {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+@media (min-width: $tbWidth) {
+  .list {
+    display: table;
+    margin: 30px auto 0;
+  }
+  .list__items {
+    display: table-cell;
+    width: $pcColumnInner;
+    li {
+      width: 240px;
+    }
+  }
+}
+
+@media (min-width: $pcWidth) {
+  .list {
+    width: $pcInner;
+  }
+}
