@@ -62,14 +62,16 @@
 @media (min-width: $pcWidth) {
   .menu__banner {
     width: 300px;
+    &:hover {
+      @include imghover;
+    }
   }
 }
-
 .new {
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   h2 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 0 0 3px;
     border-bottom: $commonborder;
   }

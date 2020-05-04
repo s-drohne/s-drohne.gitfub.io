@@ -11,7 +11,6 @@
   font-family: 'Bellota';
   text-align: center;
   width: 100%;
-  transition: $transition;
   &-warn {
     background: $accentcolor;
     color: $textcolor;
@@ -28,7 +27,7 @@
       width: 240px;
     }
     &:hover {
-      opacity: .7;
+      @include imghover;
     }
   }
 }
