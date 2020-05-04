@@ -12,6 +12,9 @@
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  h1 {
+    display: none;
+  }
 }
 
 .title__scroll {
@@ -91,6 +94,9 @@
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   &:after {
     display: block;
     content: "";
@@ -112,7 +118,7 @@
     }
   }
   &-1 {
-    background: url("../img/all.png") center center / cover;
+    background-image: url("../img/all.png");
     &:focus,
     &:hover {
       &:after {
@@ -121,7 +127,7 @@
     }
   }
   &-2 {
-    background: url("../img/firstview.png") center center / cover;
+    background-image: url("../img/firstview.png");
     &:focus,
     &:hover {
       &:after {
@@ -130,11 +136,20 @@
     }
   }
   &-3 {
-    background: url("../img/blog_top.png") center center / cover;
+    background-image: url("../img/blog_top.png");
     &:focus,
     &:hover {
       &:after {
         content: "blog";
+      }
+    }
+  }
+  &-4 {
+    background-image: url("../img/urocoya-top.png");
+    &:focus,
+    &:hover {
+      &:after {
+        content: "EC website";
       }
     }
   }

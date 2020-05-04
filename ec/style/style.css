@@ -260,13 +260,13 @@ footer {
 select {
   border: none;
   border-bottom: #362e2b 1px solid;
-  padding: 5px 25px 5px 10px;
+  padding: 5px 30px 5px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
   font-size: 13px;
   outline: none;
-  background: #ffec41 url("../img/arrow-bottom.png") no-repeat right center/12px;
+  background: #ffec41 url("../img/arrow-bottom.png") no-repeat 90% center/12px;
 }
 
 .toast {

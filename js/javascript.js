@@ -1,5 +1,5 @@
 $(function() {
-  $('.title').hide().fadeIn(2000);
+  $('h1').fadeIn(2000);
   $(".backToTop").click(function () {
     $('body,  html').animate({
       scrollTop: 0
