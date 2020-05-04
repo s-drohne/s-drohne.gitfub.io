@@ -4,15 +4,16 @@
 
 .sidemenu {
   position: fixed;
-  width: 150px;
+  width: 170px;
   height: 100vh;
   background: $textcolor;
   top: 0;
-  left: -150px;
+  left: -170px;
   z-index: 10;
   padding: 20px 0 0 15px;
   transition: $transition;
   color: $bgcolor;
+  font-size: 20px;
   a {
     color: $bgcolor;
   }
@@ -70,5 +71,7 @@
 @media (min-width: $pcWidth) {
   .sidemenu {
     width: 180px;
+    height: auto;
+    font-size: 14px;
   }
 }
