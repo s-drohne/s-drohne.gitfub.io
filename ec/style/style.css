@@ -286,15 +286,16 @@ select {
 
 .sidemenu {
   position: fixed;
-  width: 150px;
+  width: 170px;
   height: 100vh;
   background: #362e2b;
   top: 0;
-  left: -150px;
+  left: -170px;
   z-index: 10;
   padding: 20px 0 0 15px;
   transition: all 0.7s ease;
   color: #fff;
+  font-size: 20px;
 }
 .sidemenu a {
   color: #fff;
@@ -351,6 +352,8 @@ select {
 @media (min-width: 1024px) {
   .sidemenu {
     width: 180px;
+    height: auto;
+    font-size: 14px;
   }
 }
 .mainvisual {
