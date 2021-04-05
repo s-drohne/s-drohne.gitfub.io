@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+body {
+  font-family: 'Nova Round', 'Noto Sans JP';
+  position: relative;
+  font-size: 16px;
+  @include media(mobile) {
+    font-size: 14px;
+  }
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.ion-icon {
+  margin-right: 4px;
+}

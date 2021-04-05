@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+// color
+%c-bg {
+  background: rgb(203,94,238);
+  background: -moz-linear-gradient(-45deg,  rgba(203,94,238,1) 0%, rgba(75,225,236,1) 100%);
+  background: -webkit-linear-gradient(-45deg,  rgba(203,94,238,1) 0%,rgba(75,225,236,1) 100%);
+  background: linear-gradient(135deg,  rgba(203,94,238,1) 0%,rgba(75,225,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb5eee', endColorstr='#4be1ec',GradientType=1 );
+}
+%c-bg-r {
+  background: -moz-linear-gradient(-45deg,  rgba(203,94,238,1) 100%, rgba(75,225,236,1) 0%);
+  background: -webkit-linear-gradient(-45deg,  rgba(203,94,238,1) 100%,rgba(75,225,236,1) 0%);
+  background: linear-gradient(135deg,  rgba(203,94,238,1) 100%,rgba(75,225,236,1) 0%);
+  filter: progid:DXImageTransform.Microsoft.gradient( endColorstr='#cb5eee', startColorstr='#4be1ec',GradientType=1 );
+}
+
+$c-text: #444;
+$c-primary: #ee5dc7;
+$c-secondary: #5dd1ee;
+
+$c-blur: #5dd1ee;
+
+// effect
+$e-blur: 0 0 10px $c-blur;
+$e-transition-s: .7s ease-in-out;
+$e-transition-f: .3s ease-in-out;
+
+// typography
+$t-s: .9rem;
+$t-m: 1rem;
+$t-l: 1.1rem;
+$t-xl: 2rem;
+$t-xxl: 3rem;
+
+// inner width
+@mixin inner {
+  width: calc(100% - 120px);
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// z-index
+@mixin z-index($key) {
+	z-index: map-get($layer, $key);
+}
+$layer: (
+  modal: 100,
+  switch: 40,
+  frame: 20,
+  bg: -1,
+);

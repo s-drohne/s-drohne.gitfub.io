@@ -1,158 +1,242 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="js/script.js"></script>
+  <title>Document</title>
+  <base target="_blank">
+</head>
+<body>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style/base/slick.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="img/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/javascript.js"></script>
-  </head>
+  <div class="loader">
+    <div class="loader__text">
+      loading...
+    </div>
+  </div>
 
-  <body>
+  <div class="bg"></div>
+  <div class="frame"></div>
+  <section class="first-view">
+    <div class="first-view__inner">
+      <h1 class="first-view__heading">
+        Welcome to my portfolio
+      </h1>
+    </div>
+  </section>
 
-    <section class="title">
-      <div class="titleInner">
-        <h1 class="h1">welcome<br>to<br>my portfolio</h1>
+  <section class="works">
+    <h2 class="works__heading">Works</h2>
+    <nav class="works__index">
+      <div class="works__index__opener js-index-opener">
+        <span>open index</span>
       </div>
-      <span class="title__scroll">please scroll down</span>
-    </section>
-
-    <div class="biographyKey"></div>
-
-    <a href="#" class="backToTop">
-      <i class="fas fa-arrow-from-bottom"></i>
-    </a>
-
-    <section class="works fadein" id="works">
-      <h2 class="h2">works</h2>
-      <ul class="works__items">
-        <li class="works__items__item works__items__item-1"></li>
-        <li class="works__items__item works__items__item-2"></li>
-        <li class="works__items__item works__items__item-3"></li>
-        <li class="works__items__item works__items__item-4"></li>
+      <ul class="works__index__list">
       </ul>
-    </section>
+    </nav>
+    <nav class="works__nav">
+      <div class="works__nav__prev">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </div>
+      <div class="works__nav__next">
+        <ion-icon name="arrow-down-outline"></ion-icon>
+      </div>
+    </nav>
+    <div class="works__inner">
+      <ul class="works__list">
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-01.jpg" alt="">
+          <h3 class="works__item__title">EC Prototype</h3>
+        </li>
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-02.jpg" alt="">
+          <h3 class="works__item__title">Coding</h3>
+        </li>
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-03.jpg" alt="">
+          <h3 class="works__item__title">Web Service</h3>
+        </li>
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-04.jpg" alt="">
+          <h3 class="works__item__title">Corporate</h3>
+        </li>
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-05.jpg" alt="">
+          <h3 class="works__item__title">Photo Gallery</h3>
+        </li>
+        <li class="works__item">
+          <img class="works__item__img" src="img/work-06.jpg" alt="">
+          <h3 class="works__item__title">Media</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <span class="modal-area__close"></span>
+  <section class="biography">
+    <h2 class="biography__heading">Biography</h2>
+    <div class="biography__inner">
+      <dl class="biography__table">
+        <dt>S.Arai</dt>
+        <dd>
+          1990年生まれ。神奈川県出身。
+          小学生時代にHTML・CSSの世界に触れる。
+          大学在学中に現代思想を中心に様々な分野の学問に触れる傍ら、グラフィックデザインの専門学校に通学。
+        </dd>
+        <dt>
+          interested in:
+        </dt>
+        <dd>
+          <ul>
+            <li>カメラ</li>
+            <li>猫</li>
+            <li>海外旅行</li>
+            <li>ポールダンス</li>
+          </ul>
+        </dd>
+        <dt>
+          skills:
+        </dt>
+        <dd>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>jQuery</li>
+            <li>WordPress</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>XD</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </section>
 
-    <section class="modal-area">
-      <div class="modal-area__items">
-        <div class="modal-area__items__img">
-          <div><img src="img/all.png" alt=""></div>
-          <div><img src="img/majesty.png" alt=""></div>
-          <div><img src="img/blacklotus.png" alt=""></div>
-          <div><img src="img/justice.png" alt=""></div>
-          <div><img src="img/mastermind.png" alt=""></div>
-          <div><img src="img/stargazer.png" alt=""></div>
-        </div>
-        <h3 class="modal-area__items__heading">ロゴデザイン</h3>
-        <div class="modal-area__items__description">
-          <p class="modal-area__items__description__text">
-            小説「ニンジャスレイヤー」のキャラクターのためのロゴデザイン。<br>
-            各キャラクターの容姿や特徴をモチーフとして取り入れ、全体的に統一感のあるバッジ風デザインに仕上げた。
-          </p>
-          <p class="modal-area__items__description__text modal-area__items__description__text-data">
-            2015, Illustrator
-          </p>
-        </div>
+  <!-- works contents -->
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-01.jpg" alt="" class="modal__img">
       </div>
-      <div class="modal-area__items">
-        <div class="modal-area__items__img">
-          <div><img src="img/firstview.png" alt=""></div>
-          <div><img src="img/firstview-sp.png" alt=""></div>
-        </div>
-        <h3 class="modal-area__items__heading">ポートフォリオサイト</h3>
-        <div class="modal-area__items__description">
-          <p class="modal-area__items__description__text">
-            ポートフォリオ掲載用のサイト。<br>
-            使用する色やフォントを絞りながらも動きを取り入れ、シンプルで見やすく/かつ遊び心の感じられるサイトを目指した。<br>
-            また、デバイスを問わず快適に閲覧できるようスマートフォンファースト/レスポンシブでコーディング。<br>
-            CSSの記法にはBEMとSMACSSを取り入れメンテナンス性に配慮した。
-          </p>
-          <p class="modal-area__items__description__text modal-area__items__description__text-data">
-            2020, HTML5 / CSS3(Sass) / jQuery<br>
-            <a href="https://github.com/s-drohne/s-drohne.github.io" target="_blank" ><i class="fas fa-globe"></i> Source on GitHub</a>
-          </p>
-        </div>
-      </div>
-      <div class="modal-area__items">
-        <div class="modal-area__items__img">
-          <div><img src="img/blog_top.png" alt=""></div>
-          <div><img src="img/blog_article.png" alt=""></div>
-          <div><img src="img/blog_top-sp.png" alt=""></div>
-          <div><img src="img/blog_article-sp.png" alt=""></div>
-        </div>
-        <h3 class="modal-area__items__heading">ブログリニューアル</h3>
-        <div class="modal-area__items__description">
-          <p class="modal-area__items__description__text">
-            デザイナー作成のカンプを基にブログ全体(トップページ、記事ページ、各種アーカイブページ)のコーディングを行った。<br>
-            少ない人員とタイトなスケジュールの中、エンジニアと協業しながら期日中にカンプに忠実な実装を行うことができた。
-          </p>
-          <p class="modal-area__items__description__text modal-area__items__description__text-data">
-            2018, HTML5 / CSS3(Sass) / WordPress<br>
-            <a href="https://casy.co.jp/fblog/" target="_blank" ><i class="fas fa-globe"></i> https://casy.co.jp/fblog/</a>
-          </p>
-        </div>
-      </div>
-      <div class="modal-area__items">
-        <div class="modal-area__items__img">
-          <div><img src="img/urocoya-top.png" alt=""></div>
-          <div><img src="img/urocoya-top-sp.png" alt=""></div>
-          <div><img src="img/urocoya-items.png" alt=""></div>
-          <div><img src="img/urocoya-items-sp.png" alt=""></div>
-          <div><img src="img/urocoya-detail.png" alt=""></div>
-          <div><img src="img/urocoya-detail-sp.png" alt=""></div>
-          <div><img src="img/urocoya-cart.png" alt=""></div>
-          <div><img src="img/urocoya-cart-sp.png" alt=""></div>
-          <div><img src="img/proto.png" alt=""></div>
-          <div><img src="img/proto-sp.png" alt=""></div>
-        </div>
-        <h3 class="modal-area__items__heading">ECサイト</h3>
-        <div class="modal-area__items__description">
-          <p class="modal-area__items__description__text">
-            「着物をあたらしく楽しむ20-30代の女性」をターゲットにした架空のECサイトのデザイン。”和”や”伝統”に囚われないブランドイメージを、曲線的なフォントやビビッドなアクセントカラーで表現した。<br>
-            スマートフォンユーザーを想定し、モバイルファーストでレスポンシブに。見栄えだけではなく、実際に動的な仕組みが組み込まれた際のことを意識してDOM構造やコーディングを工夫した。<br>
-            トップページは大きな写真を多用して華やかに、遷移後は行きたいページに遷移できるようサイドメニューやパンくずリストを充実させた。
-          </p>
-          <p class="modal-area__items__description__text modal-area__items__description__text-data">
-            2020, Adobe XD / HTML5 / CSS3(Sass) / jQuery<br>
-            <a href="ec/" target="_blank" ><i class="fas fa-globe"></i> DEMO SITE</a><br>
-            <a href="https://github.com/s-drohne/s-drohne.github.io/tree/master/ec" target="_blank" ><i class="fas fa-globe"></i> Source on GitHub</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="biographyWrap" id="biography">
-      <h2 class="h2 h2-biography">biography</h2>
-      <div class="biography">
-        <h3 class="h3 biography__heading">S.Arai</h3>
-        <p class="biography__text">
-          1990年生まれ。神奈川県出身。<br>
-          小学生時代にHTML・CSSの世界に触れる。<br>
-          大学在学中に現代思想を中心に様々な分野の学問に触れる傍ら、グラフィックデザインの専門学校に通学。<br>
-          趣味は旅行・写真・ポールダンスなど。
+      <div class="modal__body">
+        <p class="modal__body__text">
+          「着物をあたらしく楽しむ20-30代の女性」をターゲットにした架空のECサイトのデザイン。”和”や”伝統”に囚われないブランドイメージを、曲線的なフォントやビビッドなアクセントカラーで表現した。<br>
+          スマートフォンユーザーを想定し、モバイルファーストでレスポンシブに。見栄えだけではなく、実際に動的な仕組みが組み込まれた際のことを意識してDOM構造やコーディングを工夫した。<br>
+          トップページは大きな写真を多用して華やかに、遷移後は行きたいページに遷移できるようサイドメニューやパンくずリストを充実させた。
         </p>
-      </div>
-      <div class="biography">
-        <h4 class="h4 biography__heading">Skills</h4>
-        <ul class="biography__text">
-          <li>Illustrator (CS4-CC)</li>
-          <li>Photoshop (CS4-CC)</li>
-          <li>HTML5</li>
-          <li>CSS3 / Sass</li>
-          <li>git / GitHub</li>
+        <ul class="modal__body__info">
+          <li>2020.05</li>
+          <li>HTML5/CSS3(Sass)/jQuery</li>
+          <li><a href="/ec/"><ion-icon name="globe-outline"></ion-icon>DEMO<ion-icon name="open-outline"></ion-icon></a></li>
+          <li><a href="https://github.com/s-drohne/s-drohne.github.io/tree/master/ec"><ion-icon name="logo-github"></ion-icon>Source on GitHub<ion-icon name="open-outline"></ion-icon></a></li>
         </ul>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-02.jpg" alt="" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <p class="modal__body__text">
+          デザイナー作成のカンプを基にブログ全体(トップページ、記事ページ、各種アーカイブページ)のコーディングを行った。<br>
+          少ない人員とタイトなスケジュールの中、エンジニアと協業しながら期日中にカンプに忠実な実装を行うことができた。
+        </p>
+        <ul class="modal__body__info">
+          <li>2018</li>
+          <li>HTML5/CSS3(Sass)/WordPress</li>
+          <li><a href="https://casy.co.jp/fblog/"><ion-icon name="globe-outline"></ion-icon>https://casy.co.jp/fblog/<ion-icon name="open-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-03.jpg" alt="" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <p class="modal__body__text">
+          サービスサイトのトップページリニューアル。<br>
+          構成の提案から参加し、数ある訴求ポイントを取捨・集約して「読ませる」ではく「見せる」サイトにすること、ストーリーを作って自然な流れでCVに誘導することを心がけた。<br>
+          リニューアル後、PV数平均の上昇を達成。
+        </p>
+        <ul class="modal__body__info">
+          <li>2020.8</li>
+          <li>HTML5/CSS3(Sass)/JQuery</li>
+          <li><a href="https://reserva.be"><ion-icon name="globe-outline"></ion-icon>https://reserva.be/<ion-icon name="open-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-04.jpg" alt="" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <p class="modal__body__text">
+          コーポレートサイトのフルリニューアル。<br>
+          企業のメッセージやフィロソフィをビジュアル面から訴求できるよう、アニメーションやダイナミックなタイポグラフィを取り入れた。<br>
+        </p>
+        <ul class="modal__body__info">
+          <li>2020.10</li>
+          <li>HTML5/CSS3(Sass)/JQuery/WordPress</li>
+          <li><a href="https://controlgroup.jp/"><ion-icon name="globe-outline"></ion-icon>https://controlgroup.jp<ion-icon name="open-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-05.jpg" alt="" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <p class="modal__body__text">
+          小説『ニンジャスレイヤー』のファンアートデジタル写真集。<br>
+          作品のサイバーパンクな世界観を、写真のみでなくパッケージでも表現した。
+        </p>
+        <ul class="modal__body__info">
+          <li>2020.12</li>
+          <li>HTML5/CSS3(Sass)/JQuery</li>
+          <li><a href="junko-a-la-mode/gallery/"><ion-icon name="globe-outline"></ion-icon>OPEN(PC ONLY)<ion-icon name="open-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <span class="modal__close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="modal__content">
+      <div class="modal__imgWrap">
+        <img src="img/work-06.jpg" alt="" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <p class="modal__body__text">
+          自社メディアのフルリニューアル。<br>
+          従来の「サービス公式ブログ」から、プル営業ツールとしてのメディアへと昇華させるため、ブランド力をアピールできる堅実で進歩的な印象のテンプレートを新規に作成した。<br>
+          デザインリニューアルだけでなく、非デザイナーがコンテンツを追加・編集できるような機能実装までを行った。
+        </p>
+        <ul class="modal__body__info">
+          <li>2021.2</li>
+          <li>HTML5/CSS3(Sass)/JQuery/WordPress</li>
+          <li><a href="https://blog.reserva.be/"><ion-icon name="globe-outline"></ion-icon>https://blog.reserva.be<ion-icon name="open-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  </body>
-
+</body>
 </html>

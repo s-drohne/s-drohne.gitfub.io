@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+// break points
+
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+$bp-tablet: 1024;
+$bp-mobile: 767;
+$breakpoints: (
+  tablet 	: "only screen and (max-width: #{$bp-tablet}px)",
+	mobile 	: "only screen and (max-width: #{$bp-mobile}px)",
+);

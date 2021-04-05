@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="data/css/style.css">
+  <title>Junko à la mode</title>
+  <script src="data/js/jquery-3.5.1.min.js"></script>
+  <script src="data/js/junkojs.js"></script>
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader__animation">loading...</div>
+  </div>
+
+  <div class="cursor">
+    <div class="cursor__inner">
+      <div class="cursor__text"></div>
+    </div>
+  </div>
+
+  <div class="index-bg"></div>
+
+  <nav class="index is-shrinking">
+    <a class="index__close">close</a>
+    <h2 class="index__title">index</h2>
+    <ul class="index__list">
+      <li>Mariée de l'ombre</li>
+      <li>Couleur</li>
+      <li>Au coin de la rue de Paris</li>
+      <li>Pensée sauvage</li>
+      <li>Kawaïï ju suis!</li>
+      <li>L'Ève future</li>
+    </ul>
+    <a class="index__credit">credit</a>
+  </nav>
+
+  <section class="credit">
+    <div class="credit-inner">
+      <div class="credit-scroll">
+        <dl class="credit__body">
+          <dt>model, photographer, editor</dt>
+          <dd>S.A</dd>
+        </dl>
+        <p class="credit__copyright">
+          このプログラムに含まれる画像・文章の、<br>私的利用の範囲を超える無断複製・転載を禁止します。<br>
+          このプログラムは<a href="https://twitter.com/njslyr" target="_blank">ニンジャスレイヤー</a>の二次創作作品です。<br>
+          ニンジャスレイヤーに関する諸権利は<a href="https://diehardtales.com" target="_blank">ダイハードテイルズ</a>に帰属します。
+        </p>
+        <p class="credit__message">
+          kawaii forever!<br>
+          merci!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <a class="index-open">index</a>
+
+  <div class="image-wrap">
+    <div class="nav nav--prev"></div>
+    <div class="nav nav--next"></div>
+    <div class="image" style="background-image: url(photo/img-1.jpg)"></div>
+  </div>
+
+</body>
+</html>
