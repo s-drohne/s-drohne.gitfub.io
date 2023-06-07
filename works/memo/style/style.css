@@ -154,6 +154,7 @@ body {
   display: block;
   width: 200px;
   height: auto;
+  margin: auto;
   border-radius: 3px;
 }
 
